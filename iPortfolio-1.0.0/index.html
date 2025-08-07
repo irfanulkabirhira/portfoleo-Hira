@@ -447,323 +447,387 @@
       <!-- /Resume Section -->
 
       <!-- Portfolio Section -->
-      <section id="portfolio" class="portfolio section light-background">
-        <!-- Section Title -->
-        <div class="container section-title" data-aos="fade-up">
-          <h2>Portfolio</h2>
-          <p>
-            I believe in building things that matter. From analyzing datasets to
-            creating interactive dashboards and web applications, these projects
-            reflect my curiosity, creativity, and technical journey as a Data
-            Analyst and Developer.
-          </p>
-        </div>
-        <!-- End Section Title -->
+      <section id="portfolio" class="portfolio section bg-light py-5">
+        <div class="container" data-aos="fade-up">
+          <!-- Section Title -->
+          <div class="section-title text-center mb-5">
+            <h2 class="fw-bold">Portfolio</h2>
+            <p class="text-muted">
+              I believe in building things that matter. From analyzing datasets
+              to creating interactive dashboards and web applications, these
+              projects reflect my curiosity, creativity, and technical journey
+              as a Data Analyst and Developer.
+            </p>
+          </div>
 
-        <div class="container">
-          <div
-            class="isotope-layout"
-            data-default-filter="*"
-            data-layout="masonry"
-            data-sort="original-order"
+          <!-- Filter Buttons -->
+          <ul
+            class="nav justify-content-center portfolio-filters isotope-filters mb-4 flex-wrap"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
-            <ul
-              class="portfolio-filters isotope-filters"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            >
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">PowerBI</li>
-              <li data-filter=".filter-product">Data Cleaning Best Approach</li>
-              <li data-filter=".filter-branding">Excel Dashborad project</li>
-              <li data-filter=".filter-machine-leaning">Machine Leaning</li>
-            </ul>
-            <!-- End Portfolio Filters -->
+            <li class="nav-item">
+              <button
+                class="btn btn-outline-primary me-2 mb-2 filter-active"
+                data-filter="*"
+              >
+                All
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn btn-outline-primary me-2 mb-2"
+                data-filter=".filter-app"
+              >
+                PowerBI
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn btn-outline-primary me-2 mb-2"
+                data-filter=".filter-product"
+              >
+                Data Cleaning
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn btn-outline-primary me-2 mb-2"
+                data-filter=".filter-branding"
+              >
+                Excel Dashboard
+              </button>
+            </li>
+            <li class="nav-item">
+              <button
+                class="btn btn-outline-primary me-2 mb-2"
+                data-filter=".filter-ml"
+              >
+                Machine Learning
+              </button>
+            </li>
+          </ul>
 
+          <!-- Portfolio Items -->
+          <div
+            class="row gy-4 isotope-container"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <!-- PowerBI - FIFA -->
             <div
-              class="row gy-4 isotope-container"
-              data-aos="fade-up"
-              data-aos-delay="200"
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
             >
               <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+                class="portfolio-content border rounded shadow-sm overflow-hidden h-100"
               >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/powerBI-project-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>PowerBI project-1</h4>
-                    <p>FIFA World Cup Power-BI Dashboard (1930-2014)</p>
-                    <a
-                      href="assets/img/portfolio/powerBI-project-1.png"
-                      title="PowerBI project-1"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="https://github.com/irfanulkabirhira/FIFA-World-Cup-Power-BI-Dashboard-1930-2014"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
+                <img
+                  src="assets/img/portfolio/powerBI-project-1.png"
+                  class="img-fluid w-100"
+                  alt="FIFA Power BI Dashboard"
+                />
+                <div class="p-3">
+                  <h5 class="fw-semibold">FIFA Power BI Dashboard</h5>
+                  <p class="text-muted small mb-2">
+                    1930–2014 World Cup Overview
+                  </p>
+                  <a
+                    href="assets/img/portfolio/powerBI-project-1.png"
+                    class="glightbox me-3"
+                    title="Preview"
+                    ><i class="bi bi-zoom-in fs-5"></i
+                  ></a>
+                  <a
+                    href="https://github.com/irfanulkabirhira/FIFA-World-Cup-Power-BI-Dashboard-1930-2014"
+                    title="GitHub"
+                    ><i class="bi bi-link-45deg fs-5"></i
+                  ></a>
                 </div>
               </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/Data Cleaning Steps-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Data Cleaning</h4>
-                    <p>Data Cleaning using Python</p>
-                    <a
-                      href="assets/img/portfolio/Data Cleaning Steps-1.png"
-                      title="Data Cleaning Using Python"
-                      data-gallery="portfolio-gallery-product"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="https://github.com/irfanulkabirhira/Data-Cleaning-Best-Approach-Hira-Using-python-for-Data-Analyst"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/Excel Project-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Excel Dashborad project</h4>
-                    <p>Vrinda Store Annual Sales Report 2022 Excel Dashboard</p>
-                    <a
-                      href="assets/img/portfolio/Excel Project-1.png"
-                      title="Vrinda Store Annual Sales Report 2022 Excel Dashboard"
-                      data-gallery="portfolio-gallery-branding"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="https://github.com/irfanulkabirhira/Data-Cleaning-Best-Approach-Hira-Using-python-for-Data-Analyst"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/powerBi-project-3.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>PowerBI-Project-3</h4>
-                    <p>Netflix Movies && TV-Shows Power-BI Dashboard</p>
-                    <a
-                      href="assets/img/portfolio/powerBi-project-3.png"
-                      title="Netflix Movies && TV-Shows Power-BI Dashboard"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="https://github.com/irfanulkabirhira/Netflix-Movies-and-TV-Shows-Dashboard-PowerBI"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/PowerBI-Project-2.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>PowerBI-Project-2</h4>
-                    <p>Heart Disease Analysis Dashboard in PowerBI</p>
-                    <a
-                      href="assets/img/portfolio/PowerBI-Project-2.png"
-                      title="PowerBI-Project-2"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="https://github.com/irfanulkabirhira/Heart-Disease-Analysis-Dashboard-in-PowerBI"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/powerBi-project-4.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>PowerBI-Project-4</h4>
-                    <p>Amazon Sales yearly Product's Dashboard Creation</p>
-                    <a
-                      href="assets/img/portfolio/powerBi-project-4.png"
-                      title="Amazon Sales yearly Product's Dashboard Creation"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="https://github.com/irfanulkabirhira/Amazon-Sales-Yearly-Product-Dashboard-Power-BI"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-machine-leaning"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/machine-learning-project-1.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Machine Leaning project-1</h4>
-                    <p>All Machine Learning Algorithm Applied to Bank-Data</p>
-                    <a
-                      href="assets/img/portfolio/machine-learning-project-1.png"
-                      title="All Machine Learning Algorithm Applied to Bank-Data"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="https://github.com/irfanulkabirhira/All-Machine-Learning-Algorithm-Applied-to-Bank-Data?tab=readme-ov-file"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-               <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-machine-leaning"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/movie-recomendation-ML-project-2.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Machine Leaning project-2</h4>
-                    <p>Movie Recommender System Project using Machine learning</p>
-                    <a
-                      href="assets/img/portfolio/movie-recomendation-ML-project-2.png"
-                      title="Movie Recommender System Project using Machine learning"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="https://github.com/irfanulkabirhira/Movie-Recommender-System-Project?tab=readme-ov-file"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-
-              <div
-                class="col-lg-4 col-md-6 portfolio-item isotope-item filter-machine-leaning"
-              >
-                <div class="portfolio-content h-100">
-                  <img
-                    src="assets/img/portfolio/machine-learning-heart-failure-project-4.png"
-                    class="img-fluid"
-                    alt=""
-                  />
-                  <div class="portfolio-info">
-                    <h4>Machine Leaning project-3</h4>
-                    <p>Predicting Heart Failure Outcomes Using Machine Learning</p>
-                    <a
-                      href="assets/img/portfolio/machine-learning-heart-failure-project-4.png"
-                      title="Predicting Heart Failure Outcomes Using Machine Learning"
-                      data-gallery="portfolio-gallery-app"
-                      class="glightbox preview-link"
-                      ><i class="bi bi-zoom-in"></i
-                    ></a>
-                    <a
-                      href="https://github.com/irfanulkabirhira/Predicting-Heart-Failure-Outcomes-Using-Machine-Learning"
-                      title="More Details"
-                      class="details-link"
-                      ><i class="bi bi-link-45deg"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <!-- End Portfolio Item -->
-
-
             </div>
-            <!-- End Portfolio Container -->
+
+            <!-- PowerBI - Heart Disease -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+            >
+              <div
+                class="portfolio-content border rounded shadow-sm overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/portfolio/PowerBI-Project-2.png"
+                  class="img-fluid w-100"
+                  alt="Heart Disease Power BI Dashboard"
+                />
+                <div class="p-3">
+                  <h5 class="fw-semibold">Heart Disease Dashboard</h5>
+                  <p class="text-muted small mb-2">Analysis in PowerBI</p>
+                  <a
+                    href="assets/img/portfolio/PowerBI-Project-2.png"
+                    class="glightbox me-3"
+                    title="Preview"
+                    ><i class="bi bi-zoom-in fs-5"></i
+                  ></a>
+                  <a
+                    href="https://github.com/irfanulkabirhira/Heart-Disease-Analysis-Dashboard-in-PowerBI"
+                    title="GitHub"
+                    ><i class="bi bi-link-45deg fs-5"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PowerBI - Netflix -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+            >
+              <div
+                class="portfolio-content border rounded shadow-sm overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/portfolio/powerBi-project-3.png"
+                  class="img-fluid w-100"
+                  alt="Netflix Power BI Dashboard"
+                />
+                <div class="p-3">
+                  <h5 class="fw-semibold">Netflix Dashboard</h5>
+                  <p class="text-muted small mb-2">
+                    TV Shows & Movies Insights
+                  </p>
+                  <a
+                    href="assets/img/portfolio/powerBi-project-3.png"
+                    class="glightbox me-3"
+                    ><i class="bi bi-zoom-in fs-5"></i
+                  ></a>
+                  <a
+                    href="https://github.com/irfanulkabirhira/Netflix-Movies-and-TV-Shows-Dashboard-PowerBI"
+                    ><i class="bi bi-link-45deg fs-5"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- PowerBI - Amazon Sales -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app"
+            >
+              <div
+                class="portfolio-content border rounded shadow-sm overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/portfolio/powerBi-project-4.png"
+                  class="img-fluid w-100"
+                  alt="Amazon Sales Dashboard"
+                />
+                <div class="p-3">
+                  <h5 class="fw-semibold">Amazon Sales Dashboard</h5>
+                  <p class="text-muted small mb-2">Yearly Product Analysis</p>
+                  <a
+                    href="assets/img/portfolio/powerBi-project-4.png"
+                    class="glightbox me-3"
+                    ><i class="bi bi-zoom-in fs-5"></i
+                  ></a>
+                  <a
+                    href="https://github.com/irfanulkabirhira/Amazon-Sales-Yearly-Product-Dashboard-Power-BI"
+                    ><i class="bi bi-link-45deg fs-5"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Data Cleaning -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product"
+            >
+              <div
+                class="portfolio-content border rounded shadow-sm overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/portfolio/Data Cleaning Steps-1.png"
+                  class="img-fluid w-100"
+                  alt="Data Cleaning with Python"
+                />
+                <div class="p-3">
+                  <h5 class="fw-semibold">Data Cleaning with Python</h5>
+                  <p class="text-muted small mb-2">
+                    Best Practices for Analysts
+                  </p>
+                  <a
+                    href="assets/img/portfolio/Data Cleaning Steps-1.png"
+                    class="glightbox me-3"
+                    title="Preview"
+                    ><i class="bi bi-zoom-in fs-5"></i
+                  ></a>
+                  <a
+                    href="https://github.com/irfanulkabirhira/Data-Cleaning-Best-Approach-Hira-Using-python-for-Data-Analyst"
+                    title="GitHub"
+                    ><i class="bi bi-link-45deg fs-5"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Excel Dashboard -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding"
+            >
+              <div
+                class="portfolio-content border rounded shadow-sm overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/portfolio/Excel Project-1.png"
+                  class="img-fluid w-100"
+                  alt="Vrinda Excel Dashboard"
+                />
+                <div class="p-3">
+                  <h5 class="fw-semibold">Vrinda Store Excel Dashboard</h5>
+                  <p class="text-muted small mb-2">Annual Sales Report 2022</p>
+                  <a
+                    href="assets/img/portfolio/Excel Project-1.png"
+                    class="glightbox me-3"
+                    title="Preview"
+                    ><i class="bi bi-zoom-in fs-5"></i
+                  ></a>
+                  <a
+                    href="https://github.com/irfanulkabirhira/Data-Cleaning-Best-Approach-Hira-Using-python-for-Data-Analyst"
+                    title="GitHub"
+                    ><i class="bi bi-link-45deg fs-5"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ML - All Algorithms on Bank Data -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml"
+            >
+              <div
+                class="portfolio-content border rounded shadow-sm overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/portfolio/machine-learning-project-1.png"
+                  class="img-fluid w-100"
+                  alt="ML Bank Data Project"
+                />
+                <div class="p-3">
+                  <h5 class="fw-semibold">ML Algorithms on Bank Data</h5>
+                  <p class="text-muted small mb-2">
+                    Classification & Clustering
+                  </p>
+                  <a
+                    href="assets/img/portfolio/machine-learning-project-1.png"
+                    class="glightbox me-3"
+                    ><i class="bi bi-zoom-in fs-5"></i
+                  ></a>
+                  <a
+                    href="https://github.com/irfanulkabirhira/All-Machine-Learning-Algorithm-Applied-to-Bank-Data?tab=readme-ov-file"
+                    ><i class="bi bi-link-45deg fs-5"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ML - Movie Recommender -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml"
+            >
+              <div
+                class="portfolio-content border rounded shadow-sm overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/portfolio/movie-recomendation-ML-project-2.png"
+                  class="img-fluid w-100"
+                  alt="Movie Recommender Project"
+                />
+                <div class="p-3">
+                  <h5 class="fw-semibold">Movie Recommender System</h5>
+                  <p class="text-muted small mb-2">Using Machine Learning</p>
+                  <a
+                    href="assets/img/portfolio/movie-recomendation-ML-project-2.png"
+                    class="glightbox me-3"
+                    ><i class="bi bi-zoom-in fs-5"></i
+                  ></a>
+                  <a
+                    href="https://github.com/irfanulkabirhira/Movie-Recommender-System-Project?tab=readme-ov-file"
+                    ><i class="bi bi-link-45deg fs-5"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+
+            <!-- ML - Heart Failure Prediction -->
+            <div
+              class="col-lg-4 col-md-6 portfolio-item isotope-item filter-ml"
+            >
+              <div
+                class="portfolio-content border rounded shadow-sm overflow-hidden h-100"
+              >
+                <img
+                  src="assets/img/portfolio/machine-learning-heart-failure-project-4.png"
+                  class="img-fluid w-100"
+                  alt="Heart Failure Prediction ML"
+                />
+                <div class="p-3">
+                  <h5 class="fw-semibold">Heart Failure Prediction</h5>
+                  <p class="text-muted small mb-2">
+                    ML-based Health Prediction
+                  </p>
+                  <a
+                    href="assets/img/portfolio/machine-learning-heart-failure-project-4.png"
+                    class="glightbox me-3"
+                    ><i class="bi bi-zoom-in fs-5"></i
+                  ></a>
+                  <a
+                    href="https://github.com/irfanulkabirhira/Predicting-Heart-Failure-Outcomes-Using-Machine-Learning"
+                    ><i class="bi bi-link-45deg fs-5"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <!-- /Portfolio Section -->
+
+      <!-----Start the Acheivement Section ------>
+
+      <style>
+        /* Custom styles for the achievement items */
+        .achievement-item {
+          /* On small devices, stack vertically */
+          flex-direction: column !important;
+          align-items: center !important;
+          text-align: center;
+        }
+
+        /* On medium devices and above, use horizontal layout */
+        @media (min-width: 768px) {
+          .achievement-item {
+            flex-direction: row !important;
+            align-items: flex-start !important;
+            text-align: left;
+          }
+        }
+
+        /* Image sizing: responsive and consistent */
+        .achievement-item img {
+          max-width: 120px;
+          width: 100%;
+          height: auto;
+          object-fit: contain;
+        }
+
+        /* Add some spacing inside the text container */
+        .achievement-item > div {
+          flex: 1;
+        }
+
+        /* Add margin below each card on small devices for spacing */
+        @media (max-width: 767px) {
+          .achievement-item {
+            margin-bottom: 1.5rem;
+          }
+        }
+      </style>
 
       <!-- Achievements Section -->
       <section id="achievements" class="achievements section bg-light">
@@ -778,15 +842,14 @@
         <div class="container" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
             <!-- Achievement Card 1 -->
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <div
-                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex flex-column flex-sm-row align-items-start gap-3"
+                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex gap-3"
               >
                 <img
                   src="assets/certificates/3 days AI certificate.png"
                   alt="AI Training Certificate"
                   class="img-fluid rounded"
-                  style="max-width: 120px; height: auto"
                 />
                 <div>
                   <h5>AI Training Course - ABCD Lab</h5>
@@ -804,15 +867,14 @@
             </div>
 
             <!-- Achievement Card 2 -->
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <div
-                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex flex-column flex-sm-row align-items-start gap-3"
+                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex gap-3"
               >
                 <img
                   src="assets/certificates/British airways certificate.png"
                   alt="British Airways Certificate"
                   class="img-fluid rounded"
-                  style="max-width: 120px; height: auto"
                 />
                 <div>
                   <h5>Data Science Job Simulation - British Airways</h5>
@@ -830,15 +892,14 @@
             </div>
 
             <!-- Achievement Card 3 -->
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <div
-                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex flex-column flex-sm-row align-items-start gap-3"
+                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex gap-3"
               >
                 <img
                   src="assets/certificates/Data Science And ML Course.png"
                   alt="ML with Python Certificate"
                   class="img-fluid rounded"
-                  style="max-width: 120px; height: auto"
                 />
                 <div>
                   <h5>Machine Learning with Python</h5>
@@ -856,15 +917,14 @@
             </div>
 
             <!-- Achievement Card 4 -->
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <div
-                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex flex-column flex-sm-row align-items-start gap-3"
+                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex gap-3"
               >
                 <img
                   src="assets/certificates/Nasa Sapce app challange.png"
                   alt="Space Challenge Certificate"
                   class="img-fluid rounded"
-                  style="max-width: 120px; height: auto"
                 />
                 <div>
                   <h5>International Space Challenge Participant</h5>
@@ -882,15 +942,14 @@
             </div>
 
             <!-- Achievement Card 5 -->
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <div
-                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex flex-column flex-sm-row align-items-start gap-3"
+                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex gap-3"
               >
                 <img
                   src="assets/certificates/Leadership Certificate.png"
                   alt="Leadership Training Certificate"
                   class="img-fluid rounded"
-                  style="max-width: 120px; height: auto"
                 />
                 <div>
                   <h5>Leadership Training - 10 Minute School</h5>
@@ -908,15 +967,14 @@
             </div>
 
             <!-- Achievement Card 6 -->
-            <div class="col-lg-6 col-md-6">
+            <div class="col-lg-6 col-md-6 col-sm-12">
               <div
-                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex flex-column flex-sm-row align-items-start gap-3"
+                class="achievement-item shadow-sm p-3 bg-white rounded h-100 d-flex gap-3"
               >
                 <img
                   src="assets/certificates/90 out 100 marks .png"
                   alt="Basic Computer Knowledge"
                   class="img-fluid rounded"
-                  style="max-width: 120px; height: auto"
                 />
                 <div>
                   <h5>
@@ -938,7 +996,6 @@
           </div>
         </div>
       </section>
-      <!-- /Achievements Section -->
 
       <!-- Contact Section -->
       <section id="contact" class="contact section">
@@ -1117,5 +1174,31 @@
 
     <!-- Main JS File -->
     <script src="assets/js/main.js"></script>
+
+    <!-- Isotope Script -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const isoContainer = document.querySelector(".isotope-container");
+
+        if (isoContainer) {
+          const iso = new Isotope(isoContainer, {
+            itemSelector: ".isotope-item",
+            layoutMode: "fitRows",
+          });
+
+          const filters = document.querySelectorAll(".isotope-filters button");
+          filters.forEach((button) => {
+            button.addEventListener("click", function () {
+              filters.forEach((btn) => btn.classList.remove("filter-active"));
+              this.classList.add("filter-active");
+
+              const filterValue = this.getAttribute("data-filter");
+              iso.arrange({ filter: filterValue });
+            });
+          });
+        }
+      });
+    </script>
   </body>
 </html>
